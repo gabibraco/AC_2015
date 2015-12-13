@@ -31,7 +31,7 @@ public class RecuperarDatos {
 		this.conexion=conexion;
 	}
 	//Generamos un nuevo metodo quue nos devolvera los datos al cual propagamos una excepcion 
-	public void getDatos() throws SQLException {
+	public void getDatos(String asignaturaCol) throws SQLException {
 		try{
 			//Creamos nuestra Instruccion que nos preparara el Statement para la conexion
 			instruccion =  this.conexion.createStatement();
